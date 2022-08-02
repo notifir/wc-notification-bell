@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "Notification Bell.",
+          "name": "NotificationBell",
+          "members": [
+            {
+              "kind": "field",
+              "name": "styles",
+              "static": true,
+              "default": "bellStyles"
+            },
+            {
+              "kind": "field",
+              "name": "mock",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "apiUrl",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "apiKey",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "userId",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "userHmac",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "type": {
+                "text": "object"
+              },
+              "default": "{}"
+            },
+            {
+              "kind": "field",
+              "name": "messages",
+              "type": {
+                "text": "object"
+              },
+              "default": "{}"
+            },
+            {
+              "kind": "field",
+              "name": "locale",
+              "type": {
+                "text": "string"
+              },
+              "default": "'en-GB'"
+            },
+            {
+              "kind": "field",
+              "name": "_open",
+              "type": {
+                "text": "boolean"
+              },
+              "privacy": "protected",
+              "default": "false"
+            },
+            {
+              "kind": "method",
+              "name": "_changeWidgetVisibility",
+              "privacy": "private"
+            },
+            {
+              "kind": "method",
+              "name": "_handleItemClick",
+              "privacy": "protected",
+              "parameters": [
+                {
+                  "name": "id",
+                  "type": {
+                    "text": "String"
+                  }
+                },
+                {
+                  "name": "read",
+                  "type": {
+                    "text": "boolean"
+                  }
+                },
+                {
+                  "name": "actionUrl",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_markAllAsRead",
+              "privacy": "protected",
+              "parameters": [
+                {
+                  "name": "unreadCount",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "headerTemplate",
+              "parameters": [
+                {
+                  "name": "unreadCount",
+                  "type": {
+                    "text": "number"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "contentTemplate",
+              "parameters": [
+                {
+                  "name": "items",
+                  "type": {
+                    "text": "Array<Notification>"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "itemContentTemplate",
+              "parameters": [
+                {
+                  "name": "item",
+                  "type": {
+                    "text": "Notification"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "render"
+            },
+            {
+              "kind": "method",
+              "name": "firstUpdated"
+            }
+          ],
+          "superclass": {
+            "name": "ApolloQuery",
+            "package": "@apollo-elements/lit-apollo"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "NotificationBell",
+          "declaration": {
+            "name": "NotificationBell",
+            "module": "src/index.ts"
+          }
+        }
+      ]
+    }
+  ]
+}
